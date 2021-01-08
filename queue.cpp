@@ -36,6 +36,16 @@ class Queue {
         queue[size] = data; // Adds number to end of queue
         size++; // Increases size variable
     }
+    Queue operator+(Queue &obj) {
+		Queue res;
+		for(int i=0;i<this->size;i++) {
+  		res.add(this->queue[i]);
+		}
+		for(int i=0;i<obj.size;i++) {
+			res.add(obj.queue[i]);
+		}
+		return res; 
+	}
 }; 
 
 int main() { 
