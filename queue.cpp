@@ -7,7 +7,7 @@ class Queue {
     
     public:
     Queue() {
-        size = 0; // Storess size
+        size = 0; // Stores size
         queue = new int[100]; // Creates Array to hold data
     }
     void remove() { 
